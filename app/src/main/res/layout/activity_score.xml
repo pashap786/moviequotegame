@@ -7,4 +7,29 @@
     tools:context=".ScoreActivity"
     android:background="@color/backgroundCl">
 
+    <LinearLayout
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/scoreTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="42dp"/>
+        <Button
+            android:id="@+id/homeBtn"
+            android:background="@color/fadeorange"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:onClick="sendHome"/>
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

@@ -1,6 +1,8 @@
 package saidit.pjects.com.saidit;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -48,7 +50,11 @@ public class GameActivity extends Activity {
     private void setQuestion() {
         questionCount=questionCount+1;
         if(questionCount >= 20) {
-            
+            Intent intent = new Intent(this, ScoreActivity.class);
+            String scoreTxt = ""+scoreInt;
+            Log.d("score", scoreTxt);
+            intent.putExtra("score", scoreTxt);
+            startActivity(intent);
         }
         getQuestion();
 
@@ -64,6 +70,8 @@ public class GameActivity extends Activity {
     }
 
     public void answerA(View view) {
+        final MediaPlayer beep = MediaPlayer.create(this,R.raw.beep);
+        beep.start();
         checkAnswerUpdateScore("a");
     }
 
