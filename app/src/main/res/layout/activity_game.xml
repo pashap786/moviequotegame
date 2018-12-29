@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundCl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="42dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:id="@+id/hide"
+            android:textSize="0dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:id="@+id/question"
+            android:textSize="42dp"/>
+        <Button
+            android:id="@+id/ansA"
+            android:background="@color/fadeorange"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="answerA"/>
+        <Button
+            android:id="@+id/ansB"
+            android:background="@color/fadeorange"
+            android:textSize="24dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="answerB"/>
+        <Button
+            android:id="@+id/ansC"
+            android:background="@color/fadeorange"
+            android:textSize="24dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="answerC"/>
+        <Button
+            android:id="@+id/ansD"
+            android:background="@color/fadeorange"
+            android:textSize="24dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="answerD"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
